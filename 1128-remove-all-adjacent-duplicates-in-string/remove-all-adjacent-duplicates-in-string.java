@@ -17,10 +17,15 @@ class Solution {
         }
         StringBuilder sb = new StringBuilder();
 
-        while(!st.isEmpty()){
-            sb.append(st.pop());
+        // while(!st.isEmpty()){
+        //     sb.append(st.pop());
+        // }
+
+        // return sb.reverse().toString();
+        for(char ch : st){
+            sb.append(ch);
         }
 
-        return sb.reverse().toString();
+        return sb.toString();
     }
 }
