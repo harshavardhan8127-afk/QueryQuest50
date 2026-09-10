@@ -14,10 +14,10 @@
  * }
  */
 class Solution {
-    int ans = 0;
+    int res = 0;
     public int averageOfSubtree(TreeNode root) {
         helper(root);
-        return ans;
+        return res;
     }
     int helper(TreeNode root){
         if(root == null) return 0;
@@ -28,7 +28,7 @@ class Solution {
         int sum = left + right + root.val;
         int count = Count(root);
         if(root.val == sum/count){
-            ans++;
+            res++;
         }
 
         return sum;
